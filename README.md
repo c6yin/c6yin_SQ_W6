@@ -1,4 +1,4 @@
-# Week 6 Example 2 — Free Roam Top-Down with Boss Battle
+# Rock, Scissors, Papers, Please: Border Boss
 
 ## Setup and Interaction Instructions
 
@@ -11,16 +11,7 @@ To run the sketch locally, open `index.html` in Google Chrome using Live Server.
 - B: Skip to boss fight (testing only)
 - Restart: R (after win or game over)
 
-Explore the world, survive enemy waves as you move north, then enter the glowing boss zone to fight the giant orange blob. Watch the minimap to track enemies off screen.
-
-**Adding Your Own Sounds**
-
-1. Add your sound files to `assets/sounds/`
-2. In `preload()`, uncomment the `loadSound()` lines and update the file paths
-3. Uncomment the `play()` or `loop()` calls in the relevant functions — there are hooks for the boss music transition too
-
-**Editing the Waves and Boss**
-Open `data/enemies.json` to change when waves spawn, how many enemies appear, their speed, and the boss stats. Each wave has a `spawnAt` world Y value — lower values trigger later since the player starts at the bottom of the world.
+Explore the world, survive enemy waves as you move north, then enter the glowing boss zone to fight the giant boss. Watch the minimap to track enemies off screen.
 
 **Opening the Chrome Console**
 
@@ -29,8 +20,20 @@ Open `data/enemies.json` to change when waves spawn, how many enemies appear, th
 
 ## Assets
 
-No external assets used. All visuals are generated with p5.js.
+| File                        | Source                                             |
+| --------------------------- | -------------------------------------------------- |
+| `assets/images/bg.png`      | Papers Please community backgrounds on SteamDB [1] |
+| `assets/images/bird.png`    | Papers Please wallpapers (character art) [2]       |
+| `assets/sounds/shoot.mp3`   | Papers Please in‑game SFX (Gamerip) [3]            |
+| `assets/sounds/bgmusic.mp3` | Papers Please soundtrack (Gamerip) [3]             |
+| `assets/sounds/gethit.mp3`  | Papers Please in‑game SFX — “Stamp Down” [4]       |
 
 ## References
 
-N/A
+[1] SteamDB contributors. 2026. Papers Please – Community Items (Backgrounds). Retrieved June 2026 from https://steamdb.info/app/239030/communityitems/ (steamdb.info in Bing)
+
+[2] WallpaperCave contributors. 2026. Papers Please Wallpapers. Retrieved June 2026 from https://wallpapercave.com/papers-please-wallpapers
+
+[3] Khinsider contributors. 2013. Papers Please – In‑Game Sound Effects (Gamerip). Retrieved June 2026 from https://downloads.khinsider.com/game-soundtracks/album/papers-please-in-game-sound-effects-android-ios-windows-gamerip-2013
+
+[4] Khinsider contributors. 2013. Stamp Down (Track 70). Retrieved June 2026 from https://downloads.khinsider.com/game-soundtracks/album/papers-please-in-game-sound-effects-android-ios-windows-gamerip-2013/70.%2520Stamp%2520Down.mp3

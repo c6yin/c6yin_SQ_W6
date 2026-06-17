@@ -1,4 +1,4 @@
-# Rock, Scissors, Papers, Please: Border Boss
+# Papers, Please: Border Boss
 
 ## Setup and Interaction Instructions
 
